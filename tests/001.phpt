@@ -1,5 +1,8 @@
 --TEST--
 Check for lzo presence
+<?php
+echo "hello worl";
+?>
 --SKIPIF--
 <?php if (!extension_loaded("lzo")) print "skip"; ?>
 --FILE--
