@@ -158,7 +158,7 @@ static void php_lzo_do(INTERNAL_FUNCTION_PARAMETERS, int is_compress) {
     int rc;
 
     /** Parse params */
-    if (zend_parse_parameters(ZEND_NUM_ARGS(), TSRMLS_CACHE, "s|l", &data, &data_len, &algorithm) == FAILURE) {
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CACHE, "s|l", &data, &data_len, &algorithm) == FAILURE) {
         return;
     }
 
