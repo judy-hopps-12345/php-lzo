@@ -116,7 +116,7 @@ PHP_MINIT_FUNCTION(lzo)
             i,
             CONST_CS | CONST_PERSISTENT,
             module_number,
-            TSRMLS_CC
+            TSRMLS_DC
         );
     }
 
