@@ -115,8 +115,7 @@ PHP_MINIT_FUNCTION(lzo)
             strlen(compress_database[i].name) + COMPAT_STRLEN_DELTA,
             i,
             CONST_CS | CONST_PERSISTENT,
-            module_number,
-            TSRMLS_CACHE
+            module_number
         );
     }
 
